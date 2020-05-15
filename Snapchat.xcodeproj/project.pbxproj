@@ -87,11 +87,11 @@
 				5855ACE3246CC125008BD008 /* SceneDelegate.swift */,
 				5855ACE5246CC125008BD008 /* ViewController.swift */,
 				584278EE246CECFE008BEE6C /* SnapsViewController.swift */,
+				584278F0246CED26008BEE6C /* FotoViewController.swift */,
 				5855ACE7246CC125008BD008 /* Main.storyboard */,
 				5855ACEA246CC127008BD008 /* Assets.xcassets */,
 				5855ACEC246CC127008BD008 /* LaunchScreen.storyboard */,
 				5855ACEF246CC127008BD008 /* Info.plist */,
-				584278F0246CED26008BEE6C /* FotoViewController.swift */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
