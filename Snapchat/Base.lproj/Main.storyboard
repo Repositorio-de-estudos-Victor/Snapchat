@@ -316,7 +316,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eej-Up-JZN">
-                                <rect key="frame" x="87" y="317" width="240" height="56"/>
+                                <rect key="frame" x="87" y="315" width="240" height="56"/>
                                 <color key="backgroundColor" red="0.68349460660000005" green="0.68349460660000005" blue="0.68349460660000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Próximo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -327,7 +327,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="Entrar:" destination="kZ5-uY-OoE" eventType="touchUpInside" id="hfW-mn-clL"/>
+                                    <action selector="proximoPasso:" destination="I2f-RB-9dW" eventType="touchUpInside" id="X9I-Db-7bR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -345,8 +345,17 @@
                         <viewLayoutGuide key="safeArea" id="Dqx-89-CHM"/>
                     </view>
                     <navigationItem key="navigationItem" id="SQM-bU-Eph">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="pBL-dh-L18"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="pBL-dh-L18">
+                            <connections>
+                                <action selector="selecionarFoto:" destination="I2f-RB-9dW" id="wa8-Hs-CZI"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="botaoProximo" destination="Eej-Up-JZN" id="Xoh-pW-I9F"/>
+                        <outlet property="descricao" destination="s1D-Qn-n4T" id="Ag2-2R-xpj"/>
+                        <outlet property="imagem" destination="TmL-pJ-Uei" id="CrT-Tr-kTf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JSc-dd-EUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
